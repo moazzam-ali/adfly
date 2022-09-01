@@ -1,0 +1,243 @@
+//Header Section----->
+.header{
+    display: flex;
+    padding: 5rem 12rem;
+    background: linear-gradient(90deg, rgba(137, 207, 240, 0.1) 0%, rgba(160, 32, 240, 0.1) 64.58%, rgba(160, 32, 240, 0.1) 100%);
+
+    &__description{
+        gap: 1rem;
+        padding-top: 10rem;
+
+        &__welcome{
+            font-weight: 800;
+        }
+
+        &__details{
+            margin-top: 2.4rem;
+            color: #565973;
+        }
+    }
+
+    &__illustration{
+
+    }
+
+    &__buttons{
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+
+
+
+//Satisfied Customers Section --------------->
+
+.customers{
+    padding: 5rem 15rem 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-image: url(../img/homepage/circle-customers.png);
+    background-repeat: no-repeat;
+    background-position: 102% 8%;
+    background-size: 7%; 
+
+    &__subtitle{
+        color: #565973;
+    }
+
+    &__stats{
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        width: 100%;
+
+        &__card{
+            border: 1px solid rgba(99, 102, 241, 0.35);
+            border-radius: .8rem;
+            padding: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all .2s;
+            cursor: pointer;
+        }
+
+        &__card:hover{
+            border: 1px solid rgba(160, 33, 240, 0.35);
+            box-shadow: 0px 8px 18px -8px rgba(160, 33, 240, 0.9);
+        }
+    }
+}
+
+
+//Benefits Section --------------->
+.benefits{
+    background-color: #FBF4FE;
+    text-align: center;
+    padding: 12rem 15rem 12rem;
+
+    &__cards{
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+        gap: 2rem;
+        background-color: $color-white;
+        border: 1px solid #E2E5F1;
+        border-radius: .8rem;
+        padding: 2rem;
+        transition: all .2s;
+    }
+
+    &__card:hover{
+        box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+    }
+}
+
+
+
+//Servuces Section----------->
+
+.services{
+    padding: 12rem 15rem 12rem;
+    background-image: url(../img/homepage/circle-services.png), url(../img/homepage/circle-customers.png);
+    background-repeat: no-repeat;
+    background-size: 5%, 5%;
+    background-position: left 10%, right bottom;
+
+    &__sub{
+        display: flex;
+        justify-content: space-between;
+
+        &__heading-sub{
+            flex-basis: 70%;
+            color: #9397AD;
+            margin-top: 1rem;
+        }
+
+        &__btn{
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+
+    &__cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4rem;
+        row-gap: 10rem;
+        margin-top: 10rem;
+
+    }
+
+    &__card{
+        box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+        padding: 6rem 4rem 4rem;
+        border-radius: .8rem;
+
+        &__head{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        &__icon{
+            transform: translateY(-105%);
+            position: absolute;
+        }
+
+        &__heading{
+            font-size: 2.4rem;
+            font-weight: 800;
+            line-height: 3.3rem;
+        }
+
+        &__details{
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #565973;
+            margin-top: 1.6rem;
+        }
+    }
+}
+
+
+// Ready For UGC Section (Similar Layout as satisfied customers) CTA -->
+
+.cta{
+    padding: 5rem 15rem 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    background: radial-gradient(circle, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 41.8%, rgba(241, 244, 253, 0.07) 82.52%);
+
+    &__customers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        background-repeat: no-repeat;
+        background-position: 102% 8%;
+        background-size: 7%; 
+    }
+
+    &__subtitle{
+        word-wrap: break-word;
+        width: 50%;
+        text-align: center;
+        color: #9397AD;
+    }
+
+    &__row2{
+        display: flex;
+        justify-content: space-between;
+        gap: 25rem;
+
+        &__description{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 3rem;
+
+            &__sub-heading{
+                word-wrap: break-word;
+                width: 70%;
+            }
+
+            &__stats{
+                border-top: 1px solid #E2E5F1;
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                margin-top: 1rem;
+                padding: 2rem 0;
+            }
+        }
+
+        &__illustration{
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            &__image{
+                width: 100%;
+            }
+        }
+    }
+}
