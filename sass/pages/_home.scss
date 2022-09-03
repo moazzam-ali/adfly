@@ -18,9 +18,6 @@
         }
     }
 
-    &__illustration{
-
-    }
 
     &__buttons{
         margin-top: 4rem;
@@ -378,6 +375,7 @@
     }
 
     &__carousel{
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -401,6 +399,7 @@
         &__navigation{
             display: flex;
             justify-content: space-between;
+            align-items: center;
 
             &>a{
                 cursor: pointer;
@@ -408,7 +407,7 @@
                 &:active{
                     transform: translateY(1px);
                 }
-            }
+            } 
 
         }
 

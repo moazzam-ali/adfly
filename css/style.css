@@ -196,6 +196,62 @@ btn-white:active, .btn-white:hover {
     margin-top: 2rem;
     font-weight: 400; }
 
+.slideshow-container {
+  position: relative;
+  margin: auto; }
+
+.containers {
+  display: none;
+  animation-name: fade;
+  animation-duration: .3s; }
+
+.carousel__slider {
+  height: .5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; }
+
+.carousel-indicator {
+  width: .7rem;
+  height: .7rem;
+  border-radius: .6rem;
+  background-color: #B4B7C9; }
+
+.enable {
+  background-color: #A021F0;
+  width: 2.5rem;
+  height: .7rem;
+  border-radius: .6rem;
+  transition: all .2s; }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: .2s;
+  animation-name: fade;
+  animation-duration: .2s; }
+
+.fade-in {
+  animation-name: in;
+  animation-duration: 6s; }
+
+@-webkit-keyframes fade {
+  from {
+    transform: translateX(-100vw); }
+  to {
+    transform: translateX(0rem); } }
+
+@keyframes fade {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(50vw); } }
+
+@keyframes in {
+  from {
+    transform: translateX(-50vw); }
+  to {
+    transform: translateX(0); } }
+
 .header {
   display: flex;
   padding: 5rem 12rem;
@@ -453,6 +509,7 @@ btn-white:active, .btn-white:hover {
     box-shadow: 0px 8px 18px -8px rgba(160, 32, 240, 0.5);
     border-radius: .8rem; }
   .reviews__carousel {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -470,7 +527,8 @@ btn-white:active, .btn-white:hover {
         border-radius: .8rem; }
     .reviews__carousel__navigation {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      align-items: center; }
       .reviews__carousel__navigation > a {
         cursor: pointer; }
         .reviews__carousel__navigation > a:active {

@@ -411,11 +411,12 @@
                 <div class="reviews__carousel__top">
                     <img src="./img/quotes.png" alt="">
                     <div class="reviews__carousel__navigation">
-                        <a><img src="./img/prev-btn.png" alt=""></a>
-                        <a><img src="./img/next-btn.png" alt=""></a>
+                        <a class="Back" onclick="plusSlides(-1)"><img src="./img/prev-btn.png" alt=""></a>
+                        <a class="forward" onclick="plusSlides(1)"><img src="./img/next-btn.png" alt=""></a>
                     </div>
                 </div>
-                <div class="reviews__carousel__body">
+               <div class="slideshow-container">
+                <div class="reviews__carousel__body containers">
                     <h4 class="heading-quaternary">Wir haben mit UGC von Speekly einen ROAS, der teilweise 30-40% höher ist. Ohne ein anderes Kampagnen-Setup – einfach nur aufgrund der Videos von Speekly. Wir haben bessere Ergebnisse und glücklichere Kunden. Ich kann Speekly sehr empfehlen, denn UGC ist die Zukunft des Online-Marketings.</h4>
                     <div class="reviews__carousel__body__profile">
                         <div class="reviews__carousel__body__profile__person">
@@ -432,8 +433,45 @@
                         </div>
                     </div>
                 </div>
-                <div class="reviews__carousel__slider">
-                    <img src="./img/slider.png" alt=". . . ">
+                <div class="reviews__carousel__body containers">
+                    <h4 class="heading-quaternary">Wir haben mit UGC von Speekly einen ROAS, der teilweise 30-40% höher ist. Ohne ein anderes Kampagnen-Setup – einfach nur aufgrund der Videos von Speekly. Wir haben bessere Ergebnisse und glücklichere Kunden. Ich kann Speekly sehr empfehlen, denn UGC ist die Zukunft des Online-Marketings.</h4>
+                    <div class="reviews__carousel__body__profile">
+                        <div class="reviews__carousel__body__profile__person">
+                            <img src="./img/homepage/person.png" alt="">
+                            <div class="reviews__carousel__body__profile__person__details">
+                                <p class="reviews__carousel__body__profile__person__details-name">Annette Black</p>
+                                <p class="reviews__carousel__body__profile__person__details-profession">QA Engineer in Company Name</p>
+                            </div>
+                        </div>
+                        <div class="reviews__carousel__body__profile__socials">
+                            <a href="#"><img src="./img/facebook.png" alt="Facebook"></a>
+                            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
+                            <a href="#"><img src="./img/instagram.png" alt="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__carousel__body containers">
+                    <h4 class="heading-quaternary">Wir haben mit UGC von Speekly einen ROAS, der teilweise 30-40% höher ist. Ohne ein anderes Kampagnen-Setup – einfach nur aufgrund der Videos von Speekly. Wir haben bessere Ergebnisse und glücklichere Kunden. Ich kann Speekly sehr empfehlen, denn UGC ist die Zukunft des Online-Marketings.</h4>
+                    <div class="reviews__carousel__body__profile">
+                        <div class="reviews__carousel__body__profile__person">
+                            <img src="./img/homepage/person.png" alt="">
+                            <div class="reviews__carousel__body__profile__person__details">
+                                <p class="reviews__carousel__body__profile__person__details-name">Annette Black</p>
+                                <p class="reviews__carousel__body__profile__person__details-profession">QA Engineer in Company Name</p>
+                            </div>
+                        </div>
+                        <div class="reviews__carousel__body__profile__socials">
+                            <a href="#"><img src="./img/facebook.png" alt="Facebook"></a>
+                            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
+                            <a href="#"><img src="./img/instagram.png" alt="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+               </div>
+                <div class="carousel__slider">
+                    <span class="dots carousel-indicator" onclick="currentSlide(1)"></span>
+                    <span class="dots carousel-indicator" onclick="currentSlide(2)"></span>
+                    <span class="dots carousel-indicator" onclick="currentSlide(3)"></span>
                 </div>
             </div>
 
@@ -508,5 +546,9 @@
 				</p>
 			</div>
 		</footer>
+
+
+        <!-- JavaScript Files ------ -->
+        <script src="./index.js"></script>
 	</body>
 </html>
